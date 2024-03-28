@@ -1,26 +1,54 @@
-package com.example.duancho.ActivityManHinhCho;
+package com.example.duancho;
 
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Handler;
+
+import com.example.duancho.ActivityManHinhCho.Man_Hinh_Cho_1;
 import com.example.duancho.R;
+import com.example.duancho.Utils.PreferenceUtils;
+import com.example.duancho.man_hinh_dang_nhap;
+import com.example.duancho.Database.dbHelper;
+
+//import fpoly.truongtqph41980.petshop.ActivityManHinhCho.Man_Hinh_Cho_1;
+//import fpoly.truongtqph41980.petshop.Database.dbHelper;
+//import fpoly.truongtqph41980.petshop.Utils.PreferenceUtils;
 
 public class man_hinh_cho extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_man_hinh_cho);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        setContentView(com.example.duancho.R.layout.activity_man_hinh_cho);
+        Handler handler = new Handler();
+        if (PreferenceUtils.isFirstRun(this)) {
+            // Nếu là lần đầu, hiển thị 3 màn hình
+
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(man_hinh_cho.this, Man_Hinh_Cho_1.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }, 1000);
+        } else {
+
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(man_hinh_cho.this, man_hinh_dang_nhap.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }, 1000);
+        }
+
+
+
     }
+
 }

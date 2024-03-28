@@ -37,7 +37,7 @@
             android:name=".ActivityManHinhCho.Man_Hinh_Cho_1"
             android:exported="false" />
         <activity
-            android:name=".ActivityManHinhCho.man_hinh_cho"
+            android:name=".man_hinh_cho"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
