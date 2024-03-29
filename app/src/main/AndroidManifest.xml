@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/dog"
+        android:icon="@drawable/dogshop"
         android:label="DOGSHOP"
         android:roundIcon="@drawable/dogshop"
         android:supportsRtl="true"
