@@ -10,7 +10,7 @@
         android:label="DOGSHOP"
         android:roundIcon="@drawable/dogshop"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
             android:name=".sua_Thong_tin_nguoi_dung"
@@ -24,9 +24,7 @@
         <activity
             android:name=".man_hinh_dang_ky"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
         <activity
             android:name=".ActivityManHinhCho.Man_Hinh_Cho_3"
             android:exported="false" />
@@ -35,6 +33,9 @@
             android:exported="false" />
         <activity
             android:name=".ActivityManHinhCho.Man_Hinh_Cho_1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".man_hinh_cho"

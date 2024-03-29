@@ -1,26 +1,42 @@
 package com.example.duancho.ActivityManHinhCho;
 
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.core.app.ActivityOptionsCompat;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+//import fpoly.truongtqph41980.petshop.R;
+//import fpoly.truongtqph41980.petshop.databinding.ActivityMainBinding;
+//import fpoly.truongtqph41980.petshop.databinding.ActivityManHinhCho1Binding;
+
 
 import com.example.duancho.R;
+import com.example.duancho.databinding.ActivityManHinhCho1Binding;
+import com.example.duancho.databinding.ActivityMainBinding;
 
 public class Man_Hinh_Cho_1 extends AppCompatActivity {
-
+    ActivityManHinhCho1Binding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_man_hinh_cho1);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        binding = ActivityManHinhCho1Binding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        binding.btnTiepTucMh1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Man_Hinh_Cho_1.this, Man_Hinh_Cho_2.class);
+
+                // Tạo hiệu ứng chuyển màn hình từ trái sang phải
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeCustomAnimation(
+                        Man_Hinh_Cho_1.this, R.anim.slide_in_right, 0);
+
+                // Bắt đầu Activity mới với hiệu ứng chuyển màn hình
+                startActivity(intent, options.toBundle());
+            }
         });
+
     }
 }
