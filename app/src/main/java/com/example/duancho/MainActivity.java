@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     //    Menu mMenu;
     NavigationView navigationView;
 
-
+private  String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
