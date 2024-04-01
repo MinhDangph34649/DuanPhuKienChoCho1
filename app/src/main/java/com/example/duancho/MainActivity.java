@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
 
 private  String name;
+private  String siu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
