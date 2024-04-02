@@ -30,7 +30,7 @@ public class man_hinh_cho extends AppCompatActivity {
                 public void run() {
                     Intent intent = new Intent(man_hinh_cho.this, Man_Hinh_Cho_1.class);
                     startActivity(intent);
-                    finish();
+                    finish();//
                 }
             }, 1000);
         } else {

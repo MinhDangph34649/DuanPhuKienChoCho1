@@ -10,7 +10,7 @@ import android.util.Log;
 
 public class dbHelper extends SQLiteOpenHelper {
     static String DB_NAME = "PetShop";
-    static int DB_VERSION = 27;
+    static int DB_VERSION = 28;
 
     public dbHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -36,7 +36,7 @@ public class dbHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(3,'hoangtn','123','Trần Ngọc hoàng','truong@gmail.com','0787613866','nghe an',10000,'admin','https://i.pinimg.com/originals/26/82/bf/2682bf05bc23c0b6a1145ab9c966374b.png')");
         sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(4,'truongtq1','123','Trần Quang Trường','truong@gmail.com','0787613866','nghe an',10000,'khachhang','https://e7.pngegg.com/pngimages/811/219/png-clipart-dog-cartoon-cuteness-kitten-avatar-mammal-face-thumbnail.png')");
         sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(5,'doandt1','123','Đỗ Thế Đoàn','truong@gmail.com','0787613866','nghe an',10000,'khachhang','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR089qbmlk25UijJ0nXXJof8ibc80Jq-UuDA&usqp=CAU')");
-        sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(6,'lucnt','123','Lực','luc@gmail.com','0964740605','ninh binh',10000,'khachhang','https://i.pinimg.com/originals/26/82/bf/2682bf05bc23c0b6a1145ab9c966374b.png')");
+        sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(6,'lucntkh','123','Lực','luc@gmail.com','0964740605','ninh binh',10000,'khachhang','https://i.pinimg.com/originals/26/82/bf/2682bf05bc23c0b6a1145ab9c966374b.png')");
 
 
         //2. Bảng loại sản phẩm
