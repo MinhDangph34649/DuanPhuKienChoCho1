@@ -10,7 +10,7 @@ import android.util.Log;
 
 public class dbHelper extends SQLiteOpenHelper {
     static String DB_NAME = "PetShop";
-    static int DB_VERSION = 25;
+    static int DB_VERSION = 27;
 
     public dbHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -31,12 +31,12 @@ public class dbHelper extends SQLiteOpenHelper {
                 "loaitaikhoan text not null," +
                 " anhtaikhoan text not null)";
         sqLiteDatabase.execSQL(taiKhoan);
-        sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(1,'truongtq','123','Trần Quang Trường','truong@gmail.com','0787613866','nghe an',10000,'admin','https://i.pinimg.com/474x/4a/4e/2b/4a4e2bb5dc8078b76c2a160deeb92882.jpg')");
-        sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(2,'doandt','123','Đỗ Thế Đoàn','truong@gmail.com','0787613866','nghe an',10000,'admin','https://t3.ftcdn.net/jpg/05/64/28/18/360_F_564281876_b90Cpe6MxpjC8ZVSR49Dl1UvKIjPDNK6.jpg')");
+        sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(1,'lucnt','123','Nguyễn Thế Lực','luc@gmail.com','0787613866','ninh binh',10000,'admin','https://i.pinimg.com/474x/4a/4e/2b/4a4e2bb5dc8078b76c2a160deeb92882.jpg')");
+        sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(2,'dangnm','123','Nguyễn Minh Đăng','dang@gmail.com','0787613866','nghe an',10000,'admin','https://t3.ftcdn.net/jpg/05/64/28/18/360_F_564281876_b90Cpe6MxpjC8ZVSR49Dl1UvKIjPDNK6.jpg')");
         sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(3,'hoangtn','123','Trần Ngọc hoàng','truong@gmail.com','0787613866','nghe an',10000,'admin','https://i.pinimg.com/originals/26/82/bf/2682bf05bc23c0b6a1145ab9c966374b.png')");
         sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(4,'truongtq1','123','Trần Quang Trường','truong@gmail.com','0787613866','nghe an',10000,'khachhang','https://e7.pngegg.com/pngimages/811/219/png-clipart-dog-cartoon-cuteness-kitten-avatar-mammal-face-thumbnail.png')");
         sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(5,'doandt1','123','Đỗ Thế Đoàn','truong@gmail.com','0787613866','nghe an',10000,'khachhang','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR089qbmlk25UijJ0nXXJof8ibc80Jq-UuDA&usqp=CAU')");
-        sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(6,'hoangtn1','123','Trần Ngọc hoàng','truong@gmail.com','0787613866','nghe an',10000,'khachhang','https://i.pinimg.com/originals/26/82/bf/2682bf05bc23c0b6a1145ab9c966374b.png')");
+        sqLiteDatabase.execSQL("INSERT INTO TAIKHOAN VALUES(6,'lucnt','123','Lực','luc@gmail.com','0964740605','ninh binh',10000,'khachhang','https://i.pinimg.com/originals/26/82/bf/2682bf05bc23c0b6a1145ab9c966374b.png')");
 
 
         //2. Bảng loại sản phẩm
