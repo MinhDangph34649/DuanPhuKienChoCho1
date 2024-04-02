@@ -14,9 +14,7 @@ import com.example.duancho.Utils.PreferenceUtils;
 import com.example.duancho.man_hinh_dang_nhap;
 import com.example.duancho.Database.dbHelper;
 
-//import fpoly.truongtqph41980.petshop.ActivityManHinhCho.Man_Hinh_Cho_1;
-//import fpoly.truongtqph41980.petshop.Database.dbHelper;
-//import fpoly.truongtqph41980.petshop.Utils.PreferenceUtils;
+
 
 public class man_hinh_cho extends AppCompatActivity {
     @Override
