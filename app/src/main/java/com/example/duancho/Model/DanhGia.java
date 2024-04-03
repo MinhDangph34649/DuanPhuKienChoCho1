@@ -13,6 +13,7 @@ public class DanhGia {
     private String name;
     private String number;
     private String like ;
+    private String siu ;
 
 
 
