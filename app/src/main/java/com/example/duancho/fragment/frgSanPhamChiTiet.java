@@ -8,7 +8,6 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.view.LayoutInflater;
@@ -39,8 +38,8 @@ import com.example.duancho.Model.DanhGia;
 import com.example.duancho.Model.GioHang;
 import com.example.duancho.Model.SanPham;
 import com.example.duancho.R;
-import com.example.duancho.adapter.adapter_danh_gia;
 import com.example.duancho.databinding.FragmentFrgSanPhamChiTietBinding;
+import com.example.duancho.adapter.adapter_danh_gia;
 public class frgSanPhamChiTiet extends Fragment {
 
 

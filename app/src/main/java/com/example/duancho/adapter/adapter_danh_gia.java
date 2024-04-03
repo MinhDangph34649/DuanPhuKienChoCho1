@@ -57,3 +57,4 @@ public class adapter_danh_gia extends RecyclerView.Adapter<adapter_danh_gia.View
         }
     }
 }
+
