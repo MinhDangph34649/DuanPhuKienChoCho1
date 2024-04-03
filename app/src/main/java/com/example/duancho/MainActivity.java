@@ -7,10 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelStore;
+
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -32,21 +29,7 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.navigation.NavigationView;
 import com.squareup.picasso.Picasso;
 
-//import fpoly.truongtqph41980.petshop.Model.Myapplication;
-//import fpoly.truongtqph41980.petshop.Model.SanPham;
-//import fpoly.truongtqph41980.petshop.databinding.ActivityMainBinding;
-//import fpoly.truongtqph41980.petshop.fragment.ThongKe;
-//import fpoly.truongtqph41980.petshop.fragment.frgGianHang;
-//import fpoly.truongtqph41980.petshop.fragment.frgGioHang;
-//import fpoly.truongtqph41980.petshop.fragment.frgNapTien;
-//import fpoly.truongtqph41980.petshop.fragment.frgQuanLyDonHang;
-//import fpoly.truongtqph41980.petshop.fragment.frgQuanLyLoaiSanPham;
-//import fpoly.truongtqph41980.petshop.fragment.frgQuanLyNapTien;
-//import fpoly.truongtqph41980.petshop.fragment.frgQuanLyNguoiDung;
-//import fpoly.truongtqph41980.petshop.fragment.frgQuanLySanPham;
-//import fpoly.truongtqph41980.petshop.fragment.frgTrangChu;
-//import fpoly.truongtqph41980.petshop.fragment.frg_Ve_Chung_Toi;
-//import fpoly.truongtqph41980.petshop.fragment.frg_lich_su_don_hang;
+
 
 import com.example.duancho.databinding.ActivityMainBinding;
 import com.example.duancho.fragment.ThongKe;
@@ -69,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
     //    Menu mMenu;
     NavigationView navigationView;
 
-private  String name;
-private  String siu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -228,12 +210,7 @@ private  String siu;
         return super.onOptionsItemSelected(item);
     }
 
-    //    private void hideKeyboard(@NonNull View view) {
-//        InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-//        if (imm != null) {
-//            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-//        }
-//    }
+
     private void handleBottomNavigationItemSelected() {
 
         binding.navBottomMain.setOnItemSelectedListener(item -> {

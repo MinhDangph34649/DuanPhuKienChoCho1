@@ -10,8 +10,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-//import fpoly.truongtqph41980.petshop.Database.dbHelper;
-//import fpoly.truongtqph41980.petshop.Model.DanhGia;
+
 
 import com.example.duancho.Database.dbHelper;
 import com.example.duancho.Model.DanhGia;

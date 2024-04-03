@@ -23,7 +23,7 @@ public class man_hinh_cho extends AppCompatActivity {
         setContentView(com.example.duancho.R.layout.activity_man_hinh_cho);
         Handler handler = new Handler();
         if (PreferenceUtils.isFirstRun(this)) {
-            // Nếu là lần đầu, hiển thị 3 màn hình
+
 
             handler.postDelayed(new Runnable() {
                 @Override
