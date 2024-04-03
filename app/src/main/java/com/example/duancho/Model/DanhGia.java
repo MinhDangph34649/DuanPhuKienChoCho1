@@ -11,6 +11,7 @@ public class DanhGia {
     private String nhanXet;
     private String ngayDanhGia;
     private String name;
+    private String number;
 
     public DanhGia() {
     }
